@@ -36,7 +36,7 @@ echo ">>>>> Start deploy to ${TARGET_REPOSITORY} <<<<<"
 # Installs Git.
 echo ">>> Install Git ..."
 apt-get update && \
-apt-get install -y git && \
+apt-get install -y git=2.8.1 && \
 
 # Directs the action to the the Github workspace.
 cd "${GITHUB_WORKSPACE}"
